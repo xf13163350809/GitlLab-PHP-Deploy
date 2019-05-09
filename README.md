@@ -30,8 +30,8 @@
 |index_webhook.php|入口2: gitlab push hook触发的部署|
 |index_cli.php|入口3: 命令行部署|
 |Tool.php|工具类, 用来拉取最新代码, 找出差异, 同步代码到目标目录|
-|msg.log|用来存放部署过程中的输出或错误信息|
 |scripts/ |存放不同项目的部署脚本|
+|log/ |存放部署过程中的输出或错误信息|
 
 ### 命令行部署使用举例:
 - php index_cli.php -p=dev
