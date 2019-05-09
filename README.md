@@ -1,4 +1,4 @@
-# Summer-PHP-Deploy
+# GitlLab-PHP-Deploy
 
 ## 起因
 某种原因, 不能使用Jenkins, 于是用PHP写了一个自动部署脚本
