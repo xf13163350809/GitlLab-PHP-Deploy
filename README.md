@@ -45,3 +45,22 @@
 
 ## 待开发功能
 - 压缩备份, 回退, SQL部署
+
+## 其它说明
+    1、gitlab配置webhook方法
+    * 进入项目后，“Settings” => "Integrations" => 配置Url和Secret Token，Url只能为外网地址。
+    
+    2、"cp -ar xxx xxx"失败
+    * 因为系统默认“cp”别名为“cp -i”,即上述命令变为“cp -i -ar xxx xxx”
+    > [root@VM_145_128 ~]# alias cp
+      alias cp='cp -i'
+    > [root@VM_145_128 ~]# vi ~/.bashrc 
+    #alias cp='cp -i'/g"
+    > [root@VM_145_128 ~]# source ~/.bashrc
+    修改后需要重新登陆,我这边直接切换用户
+    > [root@VM_145_128 ~]# su apache  然后 su root
+    
+    3、调试php中exec()方法执行失败问题
+    * 在命令后面加上“2>&1”,参数2，output可获取错误信息。
+    如 exec("ls -al 2>&1")
+    
